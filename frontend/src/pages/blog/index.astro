@@ -1,9 +1,18 @@
 ---
+import BlogCard from '../../components/BlogCard.astro';
 import { fetchAPI } from '../../lib/api';
 
 interface PostAttributes {
   slug: string;
   title: string;
+  createdAt: string;
+  coverImg: {
+    data: {
+      attributes: {
+        url: string;
+      };
+    };
+  };
   // Add other properties as necessary
 }
 
@@ -16,10 +25,49 @@ const response = await fetchAPI('/posts');
 const blogPosts: Post[] = await response.data;
 ---
 
-{
-  blogPosts.map(({ attributes: { slug, title } }: Post) => (
-    <h2>
-      <a href={`/blog/${slug}`}>{title}</a>
-    </h2>
-  ))
-}
+<div class='bg-white py-24 sm:py-32'>
+  <div class='mx-auto max-w-7xl px-6 lg:px-8'>
+    <div class='mx-auto max-w-2xl text-center'>
+      <h2 class='text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl'>
+        From the blog
+      </h2>
+      <p class='mt-2 text-lg leading-8 text-gray-600'>
+        Learn how to grow your business with our expert advice.
+      </p>
+    </div>
+    <div
+      class='mx-auto mt-16 grid max-w-2xl auto-rows-fr grid-cols-1 gap-8 sm:mt-20 lg:mx-0 lg:max-w-none lg:grid-cols-3'
+    >
+      {
+        blogPosts.map(
+          ({
+            attributes: {
+              slug,
+              title,
+              createdAt,
+              coverImg: {
+                data: {
+                  attributes: { url },
+                },
+              },
+            },
+          }: Post) => (
+            <BlogCard
+              title={title}
+              href={`/blog/${slug}`}
+              date={new Date(createdAt).toLocaleDateString('en-US', {
+                month: 'long',
+                day: 'numeric',
+                year: 'numeric',
+              })}
+              author='Kellen B.'
+              coverImgUrl={`http://localhost:1337${url}`}
+            />
+          )
+        )
+      }
+
+      <!-- More posts... -->
+    </div>
+  </div>
+</div>
