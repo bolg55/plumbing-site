@@ -1,0 +1,25 @@
+---
+import { fetchAPI } from '../../lib/api';
+
+interface PostAttributes {
+  slug: string;
+  title: string;
+  // Add other properties as necessary
+}
+
+interface Post {
+  id: number;
+  attributes: PostAttributes;
+}
+
+const response = await fetchAPI('/posts');
+const blogPosts: Post[] = await response.data;
+---
+
+{
+  blogPosts.map(({ attributes: { slug, title } }: Post) => (
+    <h2>
+      <a href={`/blog/${slug}`}>{title}</a>
+    </h2>
+  ))
+}
