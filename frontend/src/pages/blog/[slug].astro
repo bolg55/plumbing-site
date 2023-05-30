@@ -1,5 +1,13 @@
 ---
 import { fetchAPI } from '../../lib/api';
+import { marked } from 'marked';
+
+marked.use({
+  async: true,
+  gfm: true,
+  mangle: false,
+  headerIds: false,
+});
 
 interface PostAttributes {
   slug: string;
@@ -27,8 +35,11 @@ export async function getStaticPaths() {
 }
 
 const { post } = Astro.props;
+const content = marked.parse(post.attributes.content);
 ---
 
 <h1>Some title</h1>
+
+<article class='prose' set:html={content} />
 
 <pre>{JSON.stringify(post,null,2)}</pre>
