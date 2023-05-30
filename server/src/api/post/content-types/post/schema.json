@@ -4,8 +4,7 @@
   "info": {
     "singularName": "post",
     "pluralName": "posts",
-    "displayName": "Post",
-    "description": ""
+    "displayName": "Post"
   },
   "options": {
     "draftAndPublish": true
@@ -22,6 +21,14 @@
       "targetField": "title",
       "required": true
     },
+    "coverImg": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    },
     "content": {
       "type": "richtext",
       "required": true
@@ -30,14 +37,6 @@
       "type": "relation",
       "relation": "oneToMany",
       "target": "admin::user"
-    },
-    "coverImg": {
-      "allowedTypes": [
-        "images"
-      ],
-      "type": "media",
-      "multiple": false,
-      "required": true
     }
   }
 }
