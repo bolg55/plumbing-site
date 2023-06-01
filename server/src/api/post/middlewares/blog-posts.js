@@ -11,7 +11,7 @@ module.exports = (config, { strapi }) => {
         fields: ["name", "alternativeText", "caption", "url"],
       },
       authors: {
-        fields: ["username"],
+        fields: ["firstname"],
         populate: {
           role: {
             fields: ["name"],
