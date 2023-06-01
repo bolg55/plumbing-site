@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_layout_fa_qs",
+  "info": {
+    "displayName": "FAQs"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "default": "Frequently Asked Questions",
+      "required": true
+    },
+    "FAQs": {
+      "type": "component",
+      "repeatable": true,
+      "component": "util.faq"
+    }
+  }
+}
