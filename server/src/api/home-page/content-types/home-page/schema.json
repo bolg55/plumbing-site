@@ -33,6 +33,11 @@
       "type": "component",
       "repeatable": false,
       "component": "layout.fa-qs"
+    },
+    "NavMenu": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::menu.menu"
     }
   }
 }
