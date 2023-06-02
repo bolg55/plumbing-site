@@ -1,14 +1,41 @@
 ---
+import Header from '../components/Header';
 import LogoCloud from '../components/LogoCloud.astro';
-import Hero from '../layouts/Hero.astro';
+import ServiceOverview from '../components/ServiceOverview.astro';
+import Hero from '../components/Hero.astro';
 import Layout from '../layouts/Layout.astro';
 
-const title = 'Welcome to Astro.';
+import { fetchAPI } from '../lib/api';
+import { homePageQuery } from '../queries/populate';
+import Review from '../components/Review.astro';
+
+export interface ButtonProps {
+  label: string;
+  url: string;
+  isPrimary: boolean;
+}
+
+const test = await fetchAPI('/home-page', homePageQuery);
+
+const { Hero: hero } = test.data.attributes;
+
+const buttons = hero.buttons.map((button: ButtonProps) => {
+  return {
+    label: button.label,
+    url: button.url,
+    isPrimary: button.isPrimary,
+  };
+});
 ---
 
-<Layout title='Welcome to Astro.' description='Welcome to the home page'>
+<Layout
+  title='Welcome to the Thunderdome.'
+  description='Welcome to the home page'
+>
   <main>
-    <Hero />
-    <LogoCloud />
+    <Hero {hero} {buttons} />
+    <!-- <LogoCloud /> -->
+    <ServiceOverview />
+    <Review />
   </main>
 </Layout>
