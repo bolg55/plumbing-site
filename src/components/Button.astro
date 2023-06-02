@@ -4,9 +4,12 @@ const { label, isPrimary, url } = Astro.props;
 
 {
   isPrimary ? (
-    <button class='border-2 border-transparent hover:bg-transparent hover:text-almost-white hover:border-almost-white text-sky-800 bg-almost-white rounded px-4 py-2 transition-all duration-150 ease-in-out font-semibold'>
-      <a href={url}>{label}</a>
-    </button>
+    <a
+      href={url}
+      class='border-2 border-transparent hover:bg-transparent hover:text-almost-white hover:border-almost-white text-sky-800 bg-almost-white rounded px-4 py-2 transition-all duration-150 ease-in-out font-semibold'
+    >
+      {label}
+    </a>
   ) : (
     <a
       href={url}

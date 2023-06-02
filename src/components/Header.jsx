@@ -35,9 +35,12 @@ const Header = () => {
                 (226)-220-2782
               </a>
             </div>
-            <button className='border-2 border-transparent bg-sky-800 text-almost-white hover:border-sky-800 hover:text-sky-800 hover:bg-almost-white rounded px-4 py-2 font-semibold transition-all duration-150 ease-in-out'>
+            <a
+              href='/contact'
+              className='border-2 border-transparent bg-sky-800 text-almost-white hover:border-sky-800 hover:text-sky-800 hover:bg-almost-white rounded px-4 py-2 font-semibold transition-all duration-150 ease-in-out'
+            >
               Request a Quote
-            </button>
+            </a>
           </div>
         </div>
       </div>
