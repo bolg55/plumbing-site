@@ -39,13 +39,14 @@ const ContactForm = () => {
                 />
               </svg>
             </div>
-            <h2 className='text-3xl font-bold tracking-tight text-gray-900'>
+            <h2 className='text-3xl font-bold tracking-tight text-medium-gray'>
               Get in touch
             </h2>
             <p className='mt-6 text-lg leading-8 text-gray-600'>
-              Proin volutpat consequat porttitor cras nullam gravida at. Orci
-              molestie a eu arcu. Sed ut tincidunt integer elementum id sem.
-              Arcu sed malesuada et magna.
+              We're ready to tackle your plumbing challenges, from leaking
+              faucets to pipe installations. Get in touch with us today and let
+              our experienced team provide you with a quick and efficient
+              solution.
             </p>
             <dl className='mt-10 space-y-4 text-base leading-7 text-gray-600'>
               <div className='flex gap-x-4'>
@@ -57,9 +58,11 @@ const ContactForm = () => {
                   />
                 </dt>
                 <dd>
-                  545 Mavis Island
+                  25 Grosbeak Road
                   <br />
-                  Chicago, IL 99191
+                  Elmira, Ontario, Canada
+                  <br />
+                  N3B 1V8
                 </dd>
               </div>
               <div className='flex gap-x-4'>
@@ -73,9 +76,9 @@ const ContactForm = () => {
                 <dd>
                   <a
                     className='hover:text-gray-900'
-                    href='tel:+1 (555) 234-5678'
+                    href='tel:+1 (226) 220-2782'
                   >
-                    +1 (555) 234-5678
+                    +1 (226) 220-2782
                   </a>
                 </dd>
               </div>
@@ -90,9 +93,9 @@ const ContactForm = () => {
                 <dd>
                   <a
                     className='hover:text-gray-900'
-                    href='mailto:hello@example.com'
+                    href='mailto:cooper.adlys@gmail.com'
                   >
-                    hello@example.com
+                    cooper.adlys@gmail.com
                   </a>
                 </dd>
               </div>
@@ -104,8 +107,10 @@ const ContactForm = () => {
           onSubmit='submit'
           method='POST'
           data-netlify='true'
+          data-netlify-honeypot='bot-field'
           className='px-6 pb-24 pt-20 sm:pb-32 lg:px-8 lg:py-48'
         >
+          <input name='bot-field' className='hidden' />
           <div className='mx-auto max-w-xl lg:mr-0 lg:max-w-lg'>
             <div className='grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2'>
               <div>
@@ -121,7 +126,8 @@ const ContactForm = () => {
                     name='first-name'
                     id='first-name'
                     autoComplete='given-name'
-                    className='block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6'
+                    className='block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-sky-600 sm:text-sm sm:leading-6'
+                    placeholder='John'
                     required
                   />
                 </div>
@@ -139,7 +145,8 @@ const ContactForm = () => {
                     name='last-name'
                     id='last-name'
                     autoComplete='family-name'
-                    className='block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6'
+                    className='block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-sky-600 sm:text-sm sm:leading-6'
+                    placeholder='Doe'
                   />
                 </div>
               </div>
@@ -156,7 +163,8 @@ const ContactForm = () => {
                     name='email'
                     id='email'
                     autoComplete='email'
-                    className='block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6'
+                    className='block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-sky-600 sm:text-sm sm:leading-6'
+                    placeholder='example@email.com'
                   />
                 </div>
               </div>
@@ -173,9 +181,44 @@ const ContactForm = () => {
                     name='phone-number'
                     id='phone-number'
                     autoComplete='tel'
-                    className='block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6'
+                    className='block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-sky-600 sm:text-sm sm:leading-6'
+                    placeholder='(555) 555-5555'
                     required
                   />
+                </div>
+              </div>
+              <div>
+                <label
+                  htmlFor='preferred-contact'
+                  className='block text-sm font-semibold leading-6 text-gray-900'
+                >
+                  Preferred contact method
+                </label>
+                <div className='mt-2.5'>
+                  <select
+                    id='preferred-contact'
+                    name='preferred-contact'
+                    className='block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-sky-600 sm:text-sm sm:leading-6'
+                    defaultValue='Phone'
+                  >
+                    <option>Phone</option>
+                    <option>Email</option>
+                    <option>Any</option>
+                  </select>
+
+                  <div className='absolute inset-y-0 right-0 flex items-center pointer-events-none'>
+                    <svg
+                      className='h-5 w-5 text-gray-400'
+                      xmlns='http://www.w3.org/2000/svg'
+                      viewBox='0 0 20 20'
+                      fill='currentColor'
+                      aria-hidden='true'
+                    >
+                      <path fillRule='evenodd' clipRule='evenodd'>
+                        {' '}
+                      </path>
+                    </svg>
+                  </div>
                 </div>
               </div>
               <div className='sm:col-span-2'>
@@ -190,8 +233,9 @@ const ContactForm = () => {
                     name='message'
                     id='message'
                     rows={4}
-                    className='block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6'
+                    className='block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-sky-600 sm:text-sm sm:leading-6'
                     defaultValue={''}
+                    placeholder='Please describe your plumbing issue or request here.'
                   />
                 </div>
               </div>
@@ -199,7 +243,7 @@ const ContactForm = () => {
             <div className='mt-8 flex justify-end'>
               <button
                 type='submit'
-                className='rounded-md bg-indigo-600 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600'
+                className='rounded bg-sky-800 px-3.5 py-2.5 hover:text-sky-800 border-2 border-transparent hover:border-sky-800 text-center text-sm font-semibold text-almost-white shadow-sm hover:bg-almost-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sky-600 transition-all duration-150 ease-in-out'
               >
                 Send message
               </button>

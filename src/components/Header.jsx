@@ -27,12 +27,15 @@ const Header = () => {
           </a>
           <div className='hidden lg:flex lg:space-x-4 lg:items-center'>
             <div className='hover:text-sky-800 cursor-pointer'>
-              <a className='flex gap-2 items-center' href='tel:+12262202782'>
+              <a
+                className='flex gap-2 items-center'
+                href='tel:+1 (226) 220-2782'
+              >
                 <PhoneIcon className='h-5 w-5 text-medium-gray' />
                 (226)-220-2782
               </a>
             </div>
-            <button className='border-2 border-transparent bg-sky-800 text-almost-white hover:border-sky-800 hover:text-sky-800 hover:bg-almost-white rounded px-4 py-2'>
+            <button className='border-2 border-transparent bg-sky-800 text-almost-white hover:border-sky-800 hover:text-sky-800 hover:bg-almost-white rounded px-4 py-2 font-semibold transition-all duration-150 ease-in-out'>
               Request a Quote
             </button>
           </div>
