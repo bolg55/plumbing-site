@@ -1,27 +1,27 @@
 export const services = [
   {
     name: 'Service',
-    icon: 'images/service.svg',
+    icon: '/images/service.svg',
     href: 'service',
   },
   {
     name: 'Renovations',
-    icon: 'images/renovations.svg',
+    icon: '/images/renovations.svg',
     href: 'renovations',
   },
   {
     name: 'New Construction',
-    icon: 'images/construction.svg',
+    icon: '/images/construction.svg',
     href: 'new-construction',
   },
   {
     name: 'Water Treatment',
-    icon: 'images/water.svg',
+    icon: '/images/water.svg',
     href: 'water-treatment',
   },
   {
     name: 'Gas',
-    icon: 'images/gas.svg',
+    icon: '/images/gas.svg',
     href: 'gas',
   },
 ];
