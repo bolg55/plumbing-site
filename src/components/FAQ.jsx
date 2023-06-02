@@ -1,21 +1,13 @@
 import { Disclosure } from '@headlessui/react';
 import { MinusSmallIcon, PlusSmallIcon } from '@heroicons/react/24/outline';
-
-const faqs = [
-  {
-    question: "What's the best thing about Switzerland?",
-    answer:
-      "I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
-  },
-  // More questions...
-];
+import { faqs } from '../lib/faqs';
 
 const FAQ = () => {
   return (
     <div>
       <div className='mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:px-8 lg:py-40'>
         <div className='mx-auto max-w-4xl divide-y divide-gray-900/10'>
-          <h2 className='text-2xl font-bold leading-10 tracking-tight text-gray-900'>
+          <h2 className='mt-2 text-3xl font-bold tracking-tight text-medium-gray sm:text-4xl text-center'>
             Frequently asked questions
           </h2>
           <dl className='mt-10 space-y-6 divide-y divide-gray-900/10'>
