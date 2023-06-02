@@ -108,6 +108,7 @@ const ContactForm = () => {
           method='POST'
           data-netlify='true'
           data-netlify-honeypot='bot-field'
+          action='/success/'
           className='px-6 pb-24 pt-20 sm:pb-32 lg:px-8 lg:py-48'
         >
           <input name='bot-field' className='hidden' />
