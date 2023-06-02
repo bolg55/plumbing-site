@@ -4,6 +4,7 @@ import ServiceOverview from '../components/ServiceOverview.astro';
 import Hero from '../components/Hero.astro';
 import Layout from '../layouts/Layout.astro';
 import Review from '../components/Review.astro';
+import FAQ from '../components/FAQ';
 ---
 
 <Layout
@@ -15,5 +16,6 @@ import Review from '../components/Review.astro';
     <!-- <LogoCloud /> -->
     <ServiceOverview />
     <Review />
+    <FAQ client:visible />
   </main>
 </Layout>
