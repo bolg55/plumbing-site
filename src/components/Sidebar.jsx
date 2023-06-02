@@ -33,9 +33,9 @@ const Sidebar = ({ open = false, setOpen }) => {
         leaveTo='translate-x-full'
       >
         <div className='fixed right-0 top-0 h-screen bg-almost-white pt-20 p-8 z-50 w-64'>
-          <a href='#' onClick={() => setOpen(false)}>
+          <a onClick={() => setOpen(false)}>
             <img
-              src='images/icon-close-menu.svg'
+              src='https://res.cloudinary.com/djr4sjcgh/image/upload/v1685681700/icon-close-menu_ggq6m1.svg'
               alt='Close menu'
               className='absolute top-5 right-5'
             />
@@ -48,7 +48,11 @@ const Sidebar = ({ open = false, setOpen }) => {
                     <Disclosure.Button className='flex items-center text-left'>
                       <span className='mr-4'>Services</span>
                       <img
-                        src={`images/icon-arrow-${open ? 'up' : 'down'}.svg`}
+                        src={`${
+                          open
+                            ? 'https://res.cloudinary.com/djr4sjcgh/image/upload/v1685681699/icon-arrow-up_i3xnwe.svg'
+                            : 'https://res.cloudinary.com/djr4sjcgh/image/upload/v1685681699/icon-arrow-down_hoez2d.svg'
+                        }`}
                         alt='Arrow icon'
                       />
                     </Disclosure.Button>

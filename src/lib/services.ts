@@ -1,27 +1,27 @@
 export const services = [
   {
     name: 'Service',
-    icon: '/images/service.svg',
+    icon: 'https://res.cloudinary.com/djr4sjcgh/image/upload/v1685681700/service_lqyclr.svg',
     href: 'service',
   },
   {
     name: 'Renovations',
-    icon: '/images/renovations.svg',
+    icon: 'https://res.cloudinary.com/djr4sjcgh/image/upload/v1685681700/renovations_spkxhq.svg',
     href: 'renovations',
   },
   {
     name: 'New Construction',
-    icon: '/images/construction.svg',
+    icon: 'https://res.cloudinary.com/djr4sjcgh/image/upload/v1685681699/construction_vlogho.svg',
     href: 'new-construction',
   },
   {
     name: 'Water Treatment',
-    icon: '/images/water.svg',
+    icon: 'https://res.cloudinary.com/djr4sjcgh/image/upload/v1685681700/water_n1hcfd.svg',
     href: 'water-treatment',
   },
   {
     name: 'Gas',
-    icon: '/images/gas.svg',
+    icon: 'https://res.cloudinary.com/djr4sjcgh/image/upload/v1685681699/gas_uy7ttd.svg',
     href: 'gas',
   },
 ];

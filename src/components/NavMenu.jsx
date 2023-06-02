@@ -12,7 +12,7 @@ const NavMenu = () => {
               Services
               <img
                 className='inline-block ml-1'
-                src='images/icon-arrow-down.svg'
+                src='https://res.cloudinary.com/djr4sjcgh/image/upload/v1685681699/icon-arrow-down_hoez2d.svg'
                 alt='Icon arrow down'
               />
             </Menu.Button>

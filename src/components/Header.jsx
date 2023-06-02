@@ -20,7 +20,7 @@ const Header = () => {
         <div className='flex items-center'>
           <a onClick={() => setOpen(true)}>
             <img
-              src='images/icon-menu.svg'
+              src='https://res.cloudinary.com/djr4sjcgh/image/upload/v1685681699/icon-menu_a5k4bk.svg'
               alt='Navigation menu'
               className='block lg:hidden'
             />
