@@ -1,5 +1,6 @@
 ---
 import ContactForm from '../components/ContactForm';
+import Header from '../components/Header';
 import Layout from '../layouts/Layout.astro';
 ---
 
@@ -7,5 +8,6 @@ import Layout from '../layouts/Layout.astro';
   title='Contact Us'
   description='Contact us for all of your plumbing needs in Elmira, Kitchener, Waterloo and the surrounding area'
 >
+  <Header client:only='react' />
   <ContactForm />
 </Layout>

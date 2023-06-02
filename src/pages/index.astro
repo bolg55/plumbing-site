@@ -4,6 +4,7 @@ import ServiceOverview from '../components/ServiceOverview.astro';
 import Hero from '../components/Hero.astro';
 import Layout from '../layouts/Layout.astro';
 import Review from '../components/Review.astro';
+import Header from '../components/Header';
 ---
 
 <Layout
@@ -11,6 +12,7 @@ import Review from '../components/Review.astro';
   description='Welcome to the home page'
 >
   <main>
+    <Header client:only='react' />
     <Hero />
     <!-- <LogoCloud /> -->
     <ServiceOverview />

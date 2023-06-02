@@ -1,8 +1,10 @@
 ---
+import Header from '../components/Header';
 import Success from '../components/Success';
 import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout title='Success' description='Message sent successfully'>
+  <Header client:only='react' />
   <Success />
 </Layout>
