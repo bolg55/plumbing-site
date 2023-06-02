@@ -95,9 +95,12 @@ const Sidebar = ({ open = false, setOpen }) => {
                 (226)-220-2782
               </a>
             </div>
-            <button className='border-2 border-transparent bg-sky-800 text-almost-white hover:border-sky-800 hover:text-sky-800 hover:bg-almost-white rounded px-4 py-2'>
+            <a
+              href='/contact'
+              className='border-2 border-transparent bg-sky-800 text-almost-white hover:border-sky-800 hover:text-sky-800 hover:bg-almost-white rounded px-4 py-2'
+            >
               Request a Quote
-            </button>
+            </a>
           </div>
         </div>
       </Transition.Child>
