@@ -1,4 +1,5 @@
 ---
+import Header from '../components/Header';
 import Footer from './Footer.astro';
 // Component imports
 import Head from './Head.astro';
@@ -15,6 +16,7 @@ const { title, description } = Astro.props as Props;
 <!DOCTYPE html>
 <html lang='en'>
   <Head {title} {description} />
+  <Header client:only='react' />
   <body class='text-medium-gray bg-almost-white z-0'>
     <slot />
     <Footer />
