@@ -3,8 +3,9 @@ import {
   EnvelopeIcon,
   PhoneIcon,
 } from '@heroicons/react/24/outline';
+import type { ReactElement } from 'react';
 
-const ContactForm = () => {
+const ContactForm = (): ReactElement => {
   return (
     <div className='relative isolate bg-white'>
       <div className='mx-auto grid max-w-7xl grid-cols-1 lg:grid-cols-2'>
@@ -104,7 +105,6 @@ const ContactForm = () => {
         </div>
         <form
           name='contact'
-          onSubmit='submit'
           method='POST'
           data-netlify='true'
           data-netlify-honeypot='bot-field'

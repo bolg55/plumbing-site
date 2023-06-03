@@ -1,8 +1,9 @@
 import { Disclosure } from '@headlessui/react';
 import { MinusSmallIcon, PlusSmallIcon } from '@heroicons/react/24/outline';
 import { faqs } from '../lib/faqs';
+import type { ReactElement } from 'react';
 
-const FAQ = () => {
+const FAQ = (): ReactElement => {
   return (
     <div>
       <div className='mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:px-8 lg:py-40'>

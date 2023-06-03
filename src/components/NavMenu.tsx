@@ -1,8 +1,9 @@
 import { Menu, Transition } from '@headlessui/react';
 import { services } from '../lib/services';
 import { navItems } from '../lib/navItems';
+import type { ReactElement } from 'react';
 
-const NavMenu = () => {
+const NavMenu = (): ReactElement => {
   return (
     <nav>
       <ul className='hidden lg:flex lg:space-x-4 lg:ml-14'>

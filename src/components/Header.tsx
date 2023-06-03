@@ -1,10 +1,10 @@
 import { PhoneIcon } from '@heroicons/react/24/outline';
 import NavMenu from './NavMenu';
 import Sidebar from './Sidebar';
-import { useState } from 'react';
+import { ReactElement, useState } from 'react';
 
-const Header = () => {
-  const [open, setOpen] = useState(false);
+const Header = (): ReactElement => {
+  const [open, setOpen] = useState<boolean>(false);
 
   return (
     <header className='container'>

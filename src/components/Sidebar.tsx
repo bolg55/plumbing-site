@@ -2,8 +2,14 @@ import { Disclosure, Transition } from '@headlessui/react';
 import { services } from '../lib/services';
 import { navItems } from '../lib/navItems';
 import { PhoneIcon } from '@heroicons/react/24/outline';
+import type { ReactElement } from 'react';
 
-const Sidebar = ({ open = false, setOpen }) => {
+interface SidebarProps {
+  open: boolean;
+  setOpen: (open: boolean) => void;
+}
+
+const Sidebar = ({ open = false, setOpen }: SidebarProps): ReactElement => {
   return (
     /* The `show` prop controls all nested `Transition.Child` components. */
     <Transition show={open}>

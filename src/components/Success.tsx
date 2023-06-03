@@ -3,8 +3,9 @@ import {
   EnvelopeIcon,
   PhoneIcon,
 } from '@heroicons/react/24/outline';
+import type { ReactElement } from 'react';
 
-const Success = () => {
+const Success = (): ReactElement => {
   return (
     <div className='relative isolate bg-white'>
       <div className='mx-auto grid max-w-7xl grid-cols-1 lg:grid-cols-2'>
