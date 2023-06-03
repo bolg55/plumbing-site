@@ -1,0 +1,35 @@
+---
+import { FacebookIcon, InstagramIcon, TwitterIcon } from '../lib/icons';
+
+const socials = [
+  {
+    icon: FacebookIcon,
+    link: 'https://www.facebook.com/cooper_adlys',
+    name: 'Facebook',
+  },
+  {
+    icon: InstagramIcon,
+    link: 'https://www.instagram.com/cooperadlys',
+    name: 'Instagram',
+  },
+  {
+    icon: TwitterIcon,
+    link: 'https://twitter.com/cooperadlys',
+    name: 'Twitter',
+  },
+];
+---
+
+{
+  socials.map(({ icon: Icon, link, name }) => (
+    <a
+      href={link}
+      target='_blank'
+      rel='noopener noreferrer'
+      class='text-gray-400 hover:text-sky-800'
+    >
+      <span class='sr-only'>{name}</span>
+      <Icon />
+    </a>
+  ))
+}

@@ -14,10 +14,10 @@ const { title, description } = Astro.props as Props;
 ---
 
 <!DOCTYPE html>
-<html lang='en'>
+<html lang='en' class='h-full'>
   <Head {title} {description} />
-  <Header client:only='react' />
-  <body class='text-medium-gray bg-almost-white z-0'>
+  <Header client:load />
+  <body class='text-medium-gray bg-almost-white z-0 h-full'>
     <slot />
     <Footer />
   </body>
