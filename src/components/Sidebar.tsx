@@ -23,7 +23,7 @@ const Sidebar = ({ open = false, setOpen }: SidebarProps): ReactElement => {
         leaveTo='opacity-0'
       >
         <div
-          className='w-full h-full fixed bg-black opacity-80 z-10 inset-0'
+          className='w-full h-full fixed bg-black opacity-80 z-20 inset-0'
           onClick={() => setOpen(false)}
         ></div>
       </Transition.Child>
@@ -39,13 +39,13 @@ const Sidebar = ({ open = false, setOpen }: SidebarProps): ReactElement => {
         leaveTo='translate-x-full'
       >
         <div className='fixed right-0 top-0 h-screen bg-almost-white pt-20 p-8 z-50 w-64'>
-          <a onClick={() => setOpen(false)}>
+          <button onClick={() => setOpen(false)}>
             <img
               src='https://res.cloudinary.com/djr4sjcgh/image/upload/v1685681700/icon-close-menu_ggq6m1.svg'
               alt='Close menu'
               className='absolute top-5 right-5'
             />
-          </a>
+          </button>
           <ul className='flex flex-col space-y-3'>
             <li>
               <Disclosure>
@@ -69,6 +69,7 @@ const Sidebar = ({ open = false, setOpen }: SidebarProps): ReactElement => {
                             <a
                               className='block w-full text-left px-4 py-2 text-sm cursor-pointer'
                               href={`/services/${service.href}`}
+                              rel='prefetch'
                             >
                               <img
                                 src={service.icon}
@@ -90,23 +91,28 @@ const Sidebar = ({ open = false, setOpen }: SidebarProps): ReactElement => {
                 className='cursor-pointer hover:text-sky-800'
                 key={`${i}-${item.name}`}
               >
-                <a href={item.href}>{item.name}</a>
+                <a href={item.href} rel='prefetch'>
+                  {item.name}
+                </a>
               </li>
             ))}
           </ul>
-          <div className='items-center mt-8 space-y-4'>
+          <div className='items-center mt-8  space-y-6'>
             <div className='hover:text-sky-800 cursor-pointer'>
               <a className='flex gap-2 items-center' href='tel:+12262202782'>
                 <PhoneIcon className='h-5 w-5 text-medium-gray hover:text-sky-800' />
                 (226)-220-2782
               </a>
             </div>
-            <a
-              href='/contact'
-              className='border-2 border-transparent bg-sky-800 text-almost-white hover:border-sky-800 hover:text-sky-800 hover:bg-almost-white rounded px-4 py-2'
-            >
-              Request a Quote
-            </a>
+            <div>
+              <a
+                href='/contact'
+                className='border-2 border-transparent bg-sky-800 text-almost-white hover:border-sky-800 hover:text-sky-800 hover:bg-almost-white rounded px-4 py-2'
+                rel='prefetch'
+              >
+                Request a Quote
+              </a>
+            </div>
           </div>
         </div>
       </Transition.Child>

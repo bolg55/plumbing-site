@@ -11,20 +11,22 @@ const Header = (): ReactElement => {
       <div className='flex py-5 px-3'>
         <div className='flex items-center'>
           <h3 className='text-2xl font-semibold text-medium-gray'>
-            <a href='/'>COOPER & ADLYS</a>
+            <a href='/' rel='prefetch'>
+              COOPER & ADLYS
+            </a>
           </h3>
         </div>
         <div className='flex-grow flex items-center z-20'>
           <NavMenu />
         </div>
         <div className='flex items-center'>
-          <a onClick={() => setOpen(true)}>
+          <button onClick={() => setOpen(true)}>
             <img
               src='https://res.cloudinary.com/djr4sjcgh/image/upload/v1685681699/icon-menu_a5k4bk.svg'
               alt='Navigation menu'
               className='block lg:hidden'
             />
-          </a>
+          </button>
           <div className='hidden lg:flex lg:space-x-4 lg:items-center'>
             <div className='hover:text-sky-800 cursor-pointer'>
               <a
@@ -38,6 +40,7 @@ const Header = (): ReactElement => {
             <a
               href='/contact'
               className='border-2 border-transparent bg-sky-800 text-almost-white hover:border-sky-800 hover:text-sky-800 hover:bg-almost-white rounded px-4 py-2 font-semibold transition-all duration-150 ease-in-out'
+              rel='prefetch'
             >
               Request a Quote
             </a>

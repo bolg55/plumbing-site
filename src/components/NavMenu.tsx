@@ -34,6 +34,7 @@ const NavMenu = (): ReactElement => {
                           active && 'bg-gray-100 text-gray-900'
                         } block w-full text-left px-4 py-2 text-sm cursor-pointer`}
                         href={`/services/${service.href}`}
+                        rel='prefetch'
                       >
                         <img
                           src={service.icon}
@@ -54,7 +55,9 @@ const NavMenu = (): ReactElement => {
             className='cursor-pointer hover:text-sky-800'
             key={`${i}-${item.name}`}
           >
-            <a href={item.href}>{item.name}</a>
+            <a href={item.href} rel='prefetch'>
+              {item.name}
+            </a>
           </li>
         ))}
       </ul>
