@@ -1,14 +1,19 @@
 ---
 import Button from '../components/Button.astro';
+import { Image } from '@astrojs/image/components';
 ---
 
 <div>
   <div class='relative'>
     <!-- Decorative image and overlay -->
     <div aria-hidden='true' class='absolute inset-0 overflow-hidden'>
-      <img
+      <Image
         src='https://res.cloudinary.com/djr4sjcgh/image/upload/c_scale,w_2560/v1685655077/plumbing-840835_yginco.jpg'
         alt='Plumbing Services'
+        width={1200}
+        height={600}
+        aspectRatio='16:9'
+        format='webp'
         class='h-full w-full object-cover object-center filter grayscale'
       />
     </div>
