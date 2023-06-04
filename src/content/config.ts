@@ -5,9 +5,12 @@ const blogCollection = defineCollection({
     title: z.string(),
     author: z.string(),
     isDraft: z.boolean(),
-    publishedDate: z.string().transform((str) => new Date(str)),
+    publishedDate: z.date(),
     tags: z.array(z.string()),
-    image: z.string().optional(),
+    image: z.object({
+      src: z.string().url().optional(),
+      alt: z.string().optional(),
+    }),
     canonicalURL: z.string().url(),
   }),
 });

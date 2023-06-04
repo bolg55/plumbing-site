@@ -1,16 +1,29 @@
 ---
+layout: ../../layouts/BlogPostLayout.astro
 title: Blog post 1
+description: A meta description
 author: John Doe
 isDraft: false
-publishedDate: 02-01-2023
+publishedDate: 2023-06-17
 tags:
   - Web Development
   - JavaScript
   - Astro
-image: https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80
+image:
+  {
+    src: https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80,
+    alt: A random image,
+  }
 canonicalURL: https://localhost:3000/blog/blog-post-1
 ---
 
-# Blog post 1
+## Heading 2
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc fermentum dignissim fermentum. Nunc eget semper dui. Fusce commodo placerat dictum. Curabitur nec mauris eu mi condimentum fermentum. Donec a magna accumsan, sodales leo consequat, venenatis ligula. Vivamus a pharetra est. Nam posuere dolor sed tortor suscipit, ac feugiat magna convallis.
+| Heading 1 | Heading 2 | Heading 3 |
+| --------- | --------- | --------- |
+| Cell 1    | Cell 2    | Cell 3    |
+| Cell 4    | Cell 5    | Cell 6    |
+
+> Testing blockquote
+> Testing blockquote
+> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc fermentum dignissim fermentum. Nunc eget semper dui. Fusce commodo placerat dictum. Curabitur nec mauris eu mi condimentum fermentum. Donec a magna accumsan, sodales leo consequat, venenatis ligula. Vivamus a pharetra est. Nam posuere dolor sed tortor suscipit, ac feugiat magna convallis.
