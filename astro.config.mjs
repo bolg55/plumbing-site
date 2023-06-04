@@ -5,9 +5,11 @@ import react from '@astrojs/react';
 import prefetch from '@astrojs/prefetch';
 import image from '@astrojs/image';
 
+import sitemap from '@astrojs/sitemap';
+
 // https://astro.build/config
 export default defineConfig({
-  integrations: [tailwind(), react(), prefetch(), image()],
+  integrations: [tailwind(), react(), prefetch(), image(), sitemap()],
   experimental: {
     assets: true,
   },
@@ -17,4 +19,5 @@ export default defineConfig({
   markdown: {
     remarkPlugins: [remarkReadingTime],
   },
+  site: 'https://earnest-sawine-9bfa22.netlify.app/',
 });
