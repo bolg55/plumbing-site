@@ -1,0 +1,39 @@
+---
+const { title, author, publishedDate, tags, image } = Astro.props;
+import { Image } from '@astrojs/image/components';
+import { formatDate } from '../utils';
+
+const date = formatDate(publishedDate);
+---
+
+<header>
+  <div class='container flex flex-col items-center space-y-2 my-16'>
+    <h1 class='text-4xl font-bold'>{title}</h1>
+
+    <p class='text-gray-500'>
+      by {author} - {date}
+    </p>
+    <small>
+      {
+        tags.map((tag: string) => (
+          <a
+            href={`/category/${tag}/`}
+            class='bg-gray-200 rounded px-2 py-1 mx-1'
+          >
+            {tag}
+          </a>
+        ))
+      }
+    </small>
+  </div>
+  <Image
+    src={image.src}
+    alt={image.alt}
+    width={800}
+    height={450}
+    fit='cover'
+    quality={80}
+    format='avif'
+    class='rounded mx-auto shadow-lg mb-8 md:mb-16'
+  />
+</header>
