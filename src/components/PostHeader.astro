@@ -1,5 +1,5 @@
 ---
-const { title, author, publishedDate, tags, image } = Astro.props;
+const { title, author, publishedDate, tags, image, minutesRead } = Astro.props;
 import { Image } from '@astrojs/image/components';
 import { formatDate } from '../utils';
 
@@ -9,16 +9,17 @@ const date = formatDate(publishedDate);
 <header>
   <div class='container flex flex-col items-center space-y-2 my-16'>
     <h1 class='text-4xl font-bold'>{title}</h1>
-
+    <p>{minutesRead}</p>
     <p class='text-gray-500'>
       by {author} - {date}
     </p>
+
     <small>
       {
         tags.map((tag: string) => (
           <a
             href={`/category/${tag}/`}
-            class='bg-gray-200 rounded px-2 py-1 mx-1'
+            class='bg-sky-900 text-almost-white rounded px-2 py-1.5 mr-2'
           >
             {tag}
           </a>

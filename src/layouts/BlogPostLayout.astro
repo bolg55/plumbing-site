@@ -6,11 +6,20 @@ import Layout from './Layout.astro';
 // utils import
 
 const { frontmatter } = Astro.props;
-const { title, description, publishedDate, author, tags, image } = frontmatter;
+const { title, description, publishedDate, author, tags, image, minutesRead } =
+  frontmatter;
 ---
 
 <Layout {title} {description}>
-  <PostHeader {title} {description} {publishedDate} {author} {tags} {image} />
+  <PostHeader
+    {title}
+    {description}
+    {publishedDate}
+    {author}
+    {tags}
+    {image}
+    {minutesRead}
+  />
   <main class='container'>
     <div class='prose mx-auto items-center'>
       <slot />
