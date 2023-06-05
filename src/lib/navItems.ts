@@ -1,7 +1,7 @@
 export const navItems = [
   {
     name: 'Areas',
-    href: '/service-areas',
+    href: '/#serviceAreas',
   },
   {
     name: 'About',

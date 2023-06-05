@@ -1,9 +1,25 @@
 import { Menu, Transition } from '@headlessui/react';
 import { services } from '../lib/services';
 import { navItems } from '../lib/navItems';
-import type { ReactElement } from 'react';
+import { ReactElement, useEffect, useState } from 'react';
 
 const NavMenu = (): ReactElement => {
+  const [isHomePage, setIsHomePage] = useState<boolean>(false);
+
+  useEffect(() => {
+    setIsHomePage(window.location.pathname === '/');
+  }, []);
+
+  const handleAreasClick = (event: { preventDefault: () => void }) => {
+    if (isHomePage) {
+      event.preventDefault();
+      const element = document.querySelector('#serviceAreas');
+      if (element !== null) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  };
+
   return (
     <nav>
       <ul className='hidden lg:flex lg:space-x-4 lg:ml-14'>
@@ -55,7 +71,11 @@ const NavMenu = (): ReactElement => {
             className='cursor-pointer hover:text-sky-800'
             key={`${i}-${item.name}`}
           >
-            <a href={item.href} rel='prefetch'>
+            <a
+              href={item.href}
+              onClick={item.name === 'Areas' ? handleAreasClick : undefined}
+              rel='prefetch'
+            >
               {item.name}
             </a>
           </li>
