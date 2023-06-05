@@ -42,6 +42,7 @@ const Sidebar = ({ open = false, setOpen }: SidebarProps): ReactElement => {
           <button
             role='button'
             aria-pressed='false'
+            aria-label='Close navigation menu'
             onClick={() => setOpen(false)}
           >
             <img

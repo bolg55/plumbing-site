@@ -23,6 +23,7 @@ const Header = (): ReactElement => {
           <button
             role='button'
             aria-pressed='true'
+            aria-label='Open navigation menu'
             onClick={() => setOpen(true)}
           >
             <img
