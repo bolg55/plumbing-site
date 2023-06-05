@@ -4,12 +4,12 @@ import FooterIcons from '../components/FooterIcons.astro';
 import { footerData } from '../lib/footer';
 ---
 
-<footer aria-labelledby='footer-heading'>
+<footer aria-labelledby='footer-heading' class='border-t border-gray-900/10'>
   <h2 id='footer-heading' class='sr-only'>Footer</h2>
   <div class='mx-auto max-w-7xl px-6 pb-8 pt-16 sm:pt-24 lg:px-8 lg:pt-32'>
     <div class='xl:grid xl:grid-cols-3 xl:gap-8'>
       <h3 class='text-2xl font-semibold text-medium-gray'>
-        <a href='/'> COOPER & ADLYS</a>
+        <a href='/' class='uppercase'> {COMPANY}</a>
       </h3>
       <div
         class='mt-16 md:grid md:grid-cols-2 lg:grid-cols-4 md:gap-8 xl:col-span-2 xl:mt-0'
@@ -40,12 +40,22 @@ import { footerData } from '../lib/footer';
       <div
         class='mt-8 border-t border-gray-900/10 pt-8 md:flex md:items-center md:justify-between'
       >
-        <div class='flex space-x-6 md:order-2'>
+        <div class='flex space-x-6 md:order-3'>
           <FooterIcons />
         </div>
+
         <p class='mt-8 text-xs leading-5 text-gray-500 md:order-1 md:mt-0'>
           &copy; {new Date().getFullYear()}
           {COMPANY}, Inc. All rights reserved.
+        </p>
+        <p class='md:order-2 text-center text-sm'>
+          built by
+          <a
+            href='https://www.kellenbolger.ca'
+            class='text-sky-600 hover:text-sky-800'
+          >
+            Kellen Bolger
+          </a>
         </p>
       </div>
     </div>
