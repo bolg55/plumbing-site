@@ -10,7 +10,13 @@ const { title, description, publishedDate, author, tags, image, minutesRead } =
   frontmatter;
 ---
 
-<Layout {title} {description}>
+<Layout
+  {title}
+  {description}
+  image={frontmatter.image}
+  {frontmatter}
+  robots={frontmatter.robots}
+>
   <PostHeader
     {title}
     {description}
@@ -20,9 +26,9 @@ const { title, description, publishedDate, author, tags, image, minutesRead } =
     {image}
     {minutesRead}
   />
-  <main class='container'>
+  <article class='container'>
     <div class='prose mx-auto items-center'>
       <slot />
     </div>
-  </main>
+  </article>
 </Layout>
