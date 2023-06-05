@@ -2,7 +2,7 @@
   "title": "Cooper & Adlys - Local Plumbing Experts",
   "description": "For all of your plumbing needs in Elmira, Kitchener, Waterloo, Cambridge, Guelph, and surrounding areas. Call Cooper & Adlys, your local plumbing experts.",
   "image": {
-    "src": "/images/og-image.jpg",
+    "src": "https://res.cloudinary.com/djr4sjcgh/image/upload/v1685936813/COOPER_ADLYS_lrphub.png",
     "alt": "Cooper & Adlys Plumbing"
   }
 }
