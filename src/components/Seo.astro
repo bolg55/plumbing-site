@@ -1,5 +1,6 @@
 ---
 import siteData from '../lib/siteData.json';
+import jsonLDGenerator from '../lib/jsonLD';
 
 const {
   title,
@@ -9,6 +10,12 @@ const {
   frontmatter,
   robots,
 } = Astro.props;
+
+const jsonLD = jsonLDGenerator({
+  type: frontmatter ? 'post' : 'website',
+  post: frontmatter,
+  url,
+});
 ---
 
 <!--SEO -->
@@ -44,3 +51,6 @@ const {
 <meta name='twitter:domain' content={import.meta.env.SITE} />
 
 {robots && <meta name='robots' content='noindex, nofollow' />}
+
+<!--JSON LD -->
+<Fragment set:html={jsonLD} />
