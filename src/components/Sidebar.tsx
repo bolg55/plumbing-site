@@ -39,7 +39,11 @@ const Sidebar = ({ open = false, setOpen }: SidebarProps): ReactElement => {
         leaveTo='translate-x-full'
       >
         <div className='fixed right-0 top-0 h-screen bg-almost-white pt-20 p-8 z-50 w-64'>
-          <button onClick={() => setOpen(false)}>
+          <button
+            role='button'
+            aria-pressed='false'
+            onClick={() => setOpen(false)}
+          >
             <img
               src='https://res.cloudinary.com/djr4sjcgh/image/upload/v1685681700/icon-close-menu_ggq6m1.svg'
               alt='Close menu'

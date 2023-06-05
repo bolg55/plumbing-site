@@ -20,7 +20,11 @@ const Header = (): ReactElement => {
           <NavMenu />
         </div>
         <div className='flex items-center'>
-          <button onClick={() => setOpen(true)}>
+          <button
+            role='button'
+            aria-pressed='true'
+            onClick={() => setOpen(true)}
+          >
             <img
               src='https://res.cloudinary.com/djr4sjcgh/image/upload/v1685681699/icon-menu_a5k4bk.svg'
               alt='Navigation menu'
