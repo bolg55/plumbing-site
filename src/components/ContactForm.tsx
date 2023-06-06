@@ -245,7 +245,7 @@ const ContactForm = (): ReactElement => {
               <button
                 type='submit'
                 role='button'
-                aria-aria-label='Send message'
+                aria-label='Send message'
                 className='rounded bg-sky-800 px-3.5 py-2.5 hover:text-sky-800 border-2 border-transparent hover:border-sky-800 text-center text-sm font-semibold text-almost-white shadow-sm hover:bg-almost-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sky-600 transition-all duration-150 ease-in-out'
               >
                 Send message
