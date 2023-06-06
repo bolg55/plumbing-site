@@ -36,28 +36,24 @@ import { footerData } from '../lib/footer';
           ))
         }
       </div>
-
-      <div
-        class='mt-8 border-t border-gray-900/10 pt-8 md:flex md:items-center md:justify-between'
-      >
-        <div class='flex space-x-6 md:order-3'>
-          <FooterIcons />
-        </div>
-
-        <p class='mt-8 text-xs leading-5 text-gray-500 md:order-1 md:mt-0'>
-          &copy; {new Date().getFullYear()}
-          {COMPANY}, Inc. All rights reserved.
-        </p>
-        <p class='md:order-2 text-center text-sm'>
-          built by
-          <a
-            href='https://www.kellenbolger.ca'
-            class='text-sky-600 hover:text-sky-800'
-          >
-            Kellen Bolger
-          </a>
-        </p>
+    </div>
+    <div
+      class='mt-8 border-t border-gray-900/10 pt-8 md:flex md:items-center md:justify-between'
+    >
+      <div class='flex space-x-6 md:order-3'>
+        <FooterIcons />
       </div>
+
+      <p class='mt-8 text-xs leading-5 text-gray-500 md:order-1 md:mt-0'>
+        &copy; {new Date().getFullYear()}
+        {COMPANY}, Inc. All rights reserved.
+      </p>
+      <p class='md:order-2 text-xs mt-4 md:mt-0 leading-5 text-gray-500'>
+        built by
+        <a href='https://www.kellenbolger.ca' class='hover:text-sky-900'>
+          Kellen Bolger
+        </a>
+      </p>
     </div>
   </div>
 </footer>
