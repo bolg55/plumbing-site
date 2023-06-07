@@ -17,24 +17,24 @@ image:
 
 Every homeowner faces plumbing problems at some point, and while some require professional help, there are others you can troubleshoot yourself. Here, we present the top 5 common plumbing issues and offer easy DIY fixes.
 
-**1. Dripping Faucets**
+## 1. Dripping Faucets
 
 Dripping faucets are more than just a nuisance; they waste a lot of water and can inflate your utility bill. Often, the culprit is a worn-out washer inside the faucet handle. You can fix this issue by turning off the water supply, removing the handle, and replacing the faulty washer.
 
-**2. Slow Draining Sink**
+## 2. Slow Draining Sink
 
 This problem is usually caused by a blockage that restricts the flow of water. You can often resolve this by using a plunger, plumber's snake, or a hand auger. If these tools don't work, you might have a more serious issue that needs professional attention.
 
-**3. Clogged Bath or Shower Drain**
+## 3. Clogged Bath or Shower Drain
 
 Hair and soap often cause this problem. A plunger or a plumber's snake can usually clear the blockage. If these efforts don't work, consider a specialized drain cleaning product.
 
-**4. Running Toilet**
+## 4. Running Toilet
 
 A running toilet can waste up to 200 gallons of water per day. Often, the issue lies in the flapper valve that controls the water that passes from the tank to the bowl. Toilet repair kits that you can buy at any home improvement store often fix this issue.
 
-**5. Leaky Pipes**
+## 5. Leaky Pipes
 
 Leaky pipes can cause significant damage to your home if not addressed. Most leaks occur at the pipe joints, which can temporarily be fixed with tape, fillers, or compounds. However, for a long-term solution, you might need to replace the pipe or its fittings.
 
-Remember, while DIY solutions are suitable for minor issues, don't hesitate to [call a professional](/contact) for more significant problems. Stay tuned to Cooper & Adlys's blog for more plumbing tips and advice.
+_Remember, while DIY solutions are suitable for minor issues, don't hesitate to [call a professional](/contact) for more significant problems. Stay tuned to Cooper & Adlys's blog for more plumbing tips and advice._
