@@ -14,7 +14,6 @@ const blogCollection = defineCollection({
       src: z.string().url().optional(),
       alt: z.string().optional(),
     }),
-    canonicalURL: z.string().url(),
   }),
 });
 

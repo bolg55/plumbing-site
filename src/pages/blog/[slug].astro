@@ -1,5 +1,7 @@
 ---
 import { CollectionEntry, getCollection } from 'astro:content';
+import Layout from '../../layouts/Layout.astro';
+import PostHeader from '../../components/PostHeader.astro';
 
 export async function getStaticPaths() {
   const blogEntries = await getCollection('blog', ({ data }) => {
@@ -11,12 +13,39 @@ export async function getStaticPaths() {
   }));
 }
 
-interface Props {
-  post: CollectionEntry<'blog'>;
-}
+// interface Props {
+//   frontmatter: { minutesRead: string };
+//   post: CollectionEntry<'blog'>;
+// }
 
 const { post } = Astro.props;
-const { Content } = await post.render();
+
+const { Content, remarkPluginFrontmatter: frontmatter } = await post.render();
+const {
+  title,
+  description,
+  author,
+  publishedDate,
+  tags,
+  image,
+  minutesRead,
+  robots,
+} = frontmatter;
 ---
 
-<Content />
+<Layout {title} {description} {image} data={post.data} {robots}>
+  <PostHeader
+    {title}
+    {description}
+    {publishedDate}
+    {author}
+    {tags}
+    {image}
+    {minutesRead}
+  />
+  <article class='container'>
+    <div class='prose mx-auto items-center'>
+      <Content />
+    </div>
+  </article>
+</Layout>

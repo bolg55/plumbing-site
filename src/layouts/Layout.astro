@@ -5,12 +5,12 @@ import Footer from './Footer.astro';
 import Head from './Head.astro';
 import '@fontsource/montserrat';
 
-const { title, description, image, frontmatter, robots } = Astro.props;
+const { title, description, image, data, robots } = Astro.props;
 ---
 
 <!DOCTYPE html>
 <html lang='en' class='h-full'>
-  <Head {title} {description} {image} {frontmatter} {robots} />
+  <Head {title} {description} {image} {data} {robots} />
   <Header client:load />
   <body class='text-medium-gray bg-almost-white z-0 h-full'>
     <slot />

@@ -1,6 +1,5 @@
 ---
-layout: ../../layouts/BlogPostLayout.astro
-title: Blog post 1
+title: A long bloody title spanning two lines
 description: Are you looking for advice on how to make your blog posts stand out from the competition? This guide will teach you all you need to know about blogging.
 author: John Doe
 isDraft: false
@@ -14,7 +13,6 @@ image:
     src: https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80,
     alt: A random image,
   }
-canonicalURL: http://localhost:3000/blog/post-1
 ---
 
 ## Heading 2

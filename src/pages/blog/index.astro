@@ -1,8 +1,11 @@
 ---
-import { getCollection } from 'astro:content';
+import { CollectionEntry, getCollection } from 'astro:content';
+import { formatBlogPosts } from '../../utils';
 import Layout from '../../layouts/Layout.astro';
 import BlogCard from '../../components/BlogCard.astro';
 const blogPosts = await getCollection('blog');
+// const formattedBlogPosts: CollectionEntry<'blog'>[] =
+//   formatBlogPosts(blogPosts);
 ---
 
 <Layout title='Blog' description='This is the blog'>

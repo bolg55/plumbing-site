@@ -1,5 +1,4 @@
 ---
-layout: ../../layouts/BlogPostLayout.astro
 title: Blog post 2
 description: A meta description
 author: John Doe
@@ -12,7 +11,7 @@ tags:
 image: { src: https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1472&q=80,
 alt: A random image
 }
-canonicalURL: http://localhost:3000/blog/post-2
+
 ---
 
 # Blog post 2

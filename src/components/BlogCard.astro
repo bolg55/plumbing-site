@@ -3,10 +3,11 @@ import { Image } from '@astrojs/image/components';
 import { formatDate } from '../utils';
 
 const { post } = Astro.props;
-const { title, publishedDate, author, image, tags, canonicalURL, description } =
-  post.data;
+const { remarkPluginFrontmatter } = await post.render();
+const minutesRead = remarkPluginFrontmatter?.minutesRead;
+const { title, publishedDate, author, image, tags, description } = post.data;
 const date = formatDate(publishedDate);
-const href = `${Astro.url}/${post.slug}`;
+const href = `/blog/${post.slug}`;
 ---
 
 <article
@@ -37,6 +38,9 @@ const href = `${Astro.url}/${post.slug}`;
     <a href={href}>
       <span class='absolute inset-0'></span>
       {title}
+      <span class='text-xs font-normal text-gray-300'
+        >{minutesRead && ` (est. ${minutesRead})`}</span
+      >
     </a>
   </h3>
   <div

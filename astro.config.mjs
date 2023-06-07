@@ -1,5 +1,5 @@
 import { defineConfig, sharpImageService } from 'astro/config';
-import { remarkReadingTime } from './remark-reading-time.mjs';
+import { remarkReadingTime } from './src/utils/';
 import tailwind from '@astrojs/tailwind';
 import react from '@astrojs/react';
 import prefetch from '@astrojs/prefetch';
