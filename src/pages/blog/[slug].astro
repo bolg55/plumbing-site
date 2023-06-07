@@ -4,36 +4,26 @@ import Layout from '../../layouts/Layout.astro';
 import PostHeader from '../../components/PostHeader.astro';
 
 export async function getStaticPaths() {
-  const blogEntries = await getCollection('blog', ({ data }) => {
-    return !data.isDraft && data.publishedDate <= new Date();
-  });
+  const blogEntries = await getCollection('blog');
   return blogEntries.map((post) => ({
     params: { slug: post.slug },
     props: { post },
   }));
 }
 
-// interface Props {
-//   frontmatter: { minutesRead: string };
-//   post: CollectionEntry<'blog'>;
-// }
+interface Props {
+  frontmatter: { minutesRead: string };
+  post: CollectionEntry<'blog'>;
+}
 
 const { post } = Astro.props;
 
 const { Content, remarkPluginFrontmatter: frontmatter } = await post.render();
-const {
-  title,
-  description,
-  author,
-  publishedDate,
-  tags,
-  image,
-  minutesRead,
-  robots,
-} = frontmatter;
+const { title, description, author, publishedDate, tags, image, minutesRead } =
+  frontmatter;
 ---
 
-<Layout {title} {description} {image} data={post.data} {robots}>
+<Layout {title} {description} {image} data={post.data}>
   <PostHeader
     {title}
     {description}
