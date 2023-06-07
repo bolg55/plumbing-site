@@ -53,7 +53,7 @@ export const footerData = [
         label: 'About Us',
       },
       {
-        href: '#',
+        href: '/testimonials',
         label: 'Testimonials',
       },
     ],
