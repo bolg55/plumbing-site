@@ -7,7 +7,7 @@ const blogCollection = defineCollection({
       .string()
       .max(155, 'For optimum SEO, the description should be 155 ch or less.'),
     author: z.string(),
-    isDraft: z.boolean(),
+    isDraft: z.boolean().default(false),
     publishedDate: z.date(),
     tags: z.array(z.string()),
     image: z.object({
