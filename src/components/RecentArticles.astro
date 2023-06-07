@@ -2,6 +2,7 @@
 import { CollectionEntry, getCollection } from 'astro:content';
 import BlogCard from './BlogCard.astro';
 import { formatBlogPosts } from '../utils';
+import SectionTitle from './SectionTitle.astro';
 const blogPosts = await getCollection('blog');
 const formattedPosts: CollectionEntry<'blog'>[] = formatBlogPosts(blogPosts, {
   limit: 3,
@@ -10,16 +11,10 @@ const formattedPosts: CollectionEntry<'blog'>[] = formatBlogPosts(blogPosts, {
 
 <section class='py-24 sm:py-32'>
   <div class='mx-auto max-w-7xl px-6 lg:px-8'>
-    <div class='mx-auto max-w-4xl lg:text-center'>
-      <h2 class='text-base font-semibold leading-7 text-sky-800 uppercase'>
-        Recent Blog Posts
-      </h2>
-      <p
-        class='mt-2 text-3xl font-bold tracking-tight text-medium-gray sm:text-4xl'
-      >
-        In the pipeline: Plumbing tips &amp; tricks
-      </p>
-    </div>
+    <SectionTitle
+      accent='Recent Blog Posts'
+      title='In the pipeline: Plumbing tips & tricks'
+    />
     <div
       class='mx-auto mt-16 grid max-w-2xl auto-rows-fr grid-cols-1 gap-8 sm:mt-20 lg:mx-0 lg:max-w-none lg:grid-cols-3'
     >
