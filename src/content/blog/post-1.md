@@ -4,7 +4,7 @@ title: Blog post 1
 description: Are you looking for advice on how to make your blog posts stand out from the competition? This guide will teach you all you need to know about blogging.
 author: John Doe
 isDraft: false
-publishedDate: 2023-06-17
+publishedDate: 2023-06-01
 tags:
   - Web Development
   - JavaScript
