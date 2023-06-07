@@ -24,7 +24,7 @@ export const footerData = [
     title: 'Resources',
     links: [
       {
-        href: '#',
+        href: '/blog',
         label: 'Blog',
       },
       {
@@ -45,11 +45,11 @@ export const footerData = [
     title: 'Company',
     links: [
       {
-        href: '#',
+        href: '/contact',
         label: 'Contact Us',
       },
       {
-        href: '#',
+        href: '/about',
         label: 'About Us',
       },
       {
