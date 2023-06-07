@@ -32,7 +32,9 @@ interface Pagination {
 
 export async function getStaticPaths({ paginate }: Pagination) {
   const blogPosts = await getCollection('blog');
-  const formattedPosts: CollectionEntry<'blog'>[] = formatBlogPosts(blogPosts);
+  const formattedPosts: CollectionEntry<'blog'>[] = formatBlogPosts(blogPosts, {
+    sortByDate: true,
+  });
 
   return paginate(formattedPosts, {
     pageSize: 8,

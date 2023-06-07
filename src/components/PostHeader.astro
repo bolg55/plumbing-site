@@ -4,17 +4,13 @@ import { Image } from '@astrojs/image/components';
 import { formatDate } from '../utils';
 
 const date = formatDate(publishedDate);
+
+const formattedTitle = title.split('|')[0].trim();
 ---
 
 <header>
   <div class='container flex flex-col items-center space-y-2 my-16'>
-    <h1 class='text-4xl font-bold'>{title}</h1>
-    <p>{minutesRead}</p>
-    <p class='text-gray-500'>
-      by {author} - {date}
-    </p>
-
-    <small>
+    <small class='mb-4'>
       {
         tags.map((tag: string) => (
           <a
@@ -26,6 +22,11 @@ const date = formatDate(publishedDate);
         ))
       }
     </small>
+    <h1 class='text-4xl font-bold'>{formattedTitle}</h1>
+    <p class='text-gray-500'>
+      by {author} - {date}
+    </p>
+    <p>{minutesRead}</p>
   </div>
   <Image
     src={image.src}

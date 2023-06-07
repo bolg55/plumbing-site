@@ -58,7 +58,8 @@ export const formatBlogPosts = (
       ) => {
         const aDate = new Date(a.data.publishedDate);
         const bDate = new Date(b.data.publishedDate);
-        aDate > bDate ? -1 : 1;
+
+        return bDate.getTime() - aDate.getTime();
       }
     );
   } else {

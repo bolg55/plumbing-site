@@ -8,6 +8,8 @@ const minutesRead = remarkPluginFrontmatter?.minutesRead;
 const { title, publishedDate, author, image, tags, description } = post.data;
 const date = formatDate(publishedDate);
 const href = `/blog/${post.slug}`;
+
+const formattedTitle = title.split('|')[0].trim();
 ---
 
 <article
@@ -37,9 +39,9 @@ const href = `/blog/${post.slug}`;
   <h3 class='mt-3 text-lg font-semibold leading-6 text-white'>
     <a href={href}>
       <span class='absolute inset-0'></span>
-      {title}
+      {formattedTitle}
       <span class='text-xs font-normal text-gray-300'
-        >{minutesRead && ` (est. ${minutesRead})`}</span
+        >{minutesRead && ` est. ${minutesRead}`}</span
       >
     </a>
   </h3>

@@ -1,3 +1,7 @@
+---
+import SectionTitle from './SectionTitle.astro';
+---
+
 <section class='relative isolate pb-32 pt-24 sm:pt-32'>
   <div
     class='absolute inset-x-0 top-1/2 -z-10 -translate-y-1/2 transform-gpu overflow-hidden opacity-30 blur-3xl'
@@ -20,16 +24,10 @@
     </div>
   </div>
   <div class='mx-auto max-w-7xl px-6 lg:px-8'>
-    <div class='mx-auto max-w-xl text-center'>
-      <h2 class='text-base font-semibold leading-7 text-sky-800 uppercase'>
-        Testimonials
-      </h2>
-      <p
-        class='mt-2 text-3xl font-bold tracking-tight text-medium-gray sm:text-4xl'
-      >
-        We have worked with tons of amazing people
-      </p>
-    </div>
+    <SectionTitle
+      accent='Testimonials'
+      title='We have worked with tons of amazing people'
+    />
     <div
       class='mx-auto mt-16 grid max-w-2xl grid-cols-1 grid-rows-1 gap-8 text-sm leading-6 text-gray-900 sm:mt-20 sm:grid-cols-2 xl:mx-0 xl:max-w-none xl:grid-flow-col xl:grid-cols-4'
     >
