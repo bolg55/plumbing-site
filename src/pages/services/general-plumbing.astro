@@ -1,0 +1,46 @@
+---
+import Services from '../../components/Services.astro';
+import Layout from '../../layouts/Layout.astro';
+
+const highlights = [
+  {
+    title: 'Comprehensive Plumbing Solutions',
+    description:
+      "We offer a full range of plumbing services to address any issue you may be facing. Whether you're currently dealing with a severely clogged drain, you suspect your water heater may be malfunctioning, or you'd like to avoid future problems by scheduling a routine maintenance service, we're prepared to help.",
+  },
+  {
+    title: 'Quality Workmanship & Professionalism',
+    description:
+      "Our team of plumbers is made up of specialists who are passionate about providing homeowners with the honest, reliable service they deserve. We're proud to be a locally owned and operated company that always puts the needs of our customers first.",
+  },
+  {
+    title: 'Transparent Pricing & Upfront Quotes',
+    description:
+      "We know that plumbing problems often come up without warning. That's why we offer our customers honest, upfront pricing for every project, so you never have to worry about surprise charges or hidden fees.",
+  },
+];
+
+const image = {
+  src: 'https://res.cloudinary.com/djr4sjcgh/image/upload/v1686173816/plumber-228010_1280_d4wkqu.jpg',
+  alt: 'Plumber fixing a sink',
+};
+
+const ACCENT = 'Expert Plumbing Solutions';
+const H1 = 'Your one-stop solution for all plumbing needs';
+const HEADLINE =
+  'Providing quality, reliable and comprehensive general plumbing services to keep your home or business running smoothly. Servicing areas throughout Waterloo Region and Wellington County.';
+const P1 =
+  "We understand how disruptive plumbing issues can be to your daily routine. That's why our team of highly experienced and certified plumbers are committed to providing prompt, efficient, and top-quality general plumbing services. From fixing leaks and drips to installing new fixtures, we ensure everything flows as it should in your home.";
+const P2 =
+  'With our team, you can expect professional service with a focus on customer satisfaction. We employ the latest plumbing technologies and methods to ensure a job well done. We value your time and comfort, which is why we work quickly without compromising on the quality of our service.';
+const H2 = 'Why Choose Our General Plumbing Services?';
+const P3 =
+  "We offer a wide range of general plumbing services tailored to your specific needs. Our plumbers are well-versed in troubleshooting and resolving all types of plumbing issues, no matter how complex. We're also dedicated to providing excellent customer service. We communicate openly, provide upfront pricing, and ensure our work area is as clean as when we arrived.";
+---
+
+<Layout
+  title='Expert Plumbing Solutions'
+  description='Providing quality, reliable and comprehensive general plumbing services throughout Waterloo Region and Wellington County.'
+>
+  <Services {ACCENT} {H1} {HEADLINE} {P1} {P2} {H2} {P3} {highlights} {image} />
+</Layout>

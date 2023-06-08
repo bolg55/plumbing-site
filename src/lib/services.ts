@@ -1,8 +1,8 @@
 export const services = [
   {
-    name: 'Service',
+    name: 'General Plumbing',
     icon: 'https://res.cloudinary.com/djr4sjcgh/image/upload/v1685681700/service_lqyclr.svg',
-    href: 'service',
+    href: 'general-plumbing',
   },
   {
     name: 'Renovations',
