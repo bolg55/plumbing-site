@@ -9,7 +9,9 @@ const formattedTitle = title.split('|')[0].trim();
 ---
 
 <header>
-  <div class='container flex flex-col items-center space-y-2 my-16'>
+  <div
+    class='container flex flex-col lg:items-center space-y-2 my-16 px-2 lg:px-0'
+  >
     <small class='mb-4'>
       {
         tags.map((tag: string) => (
@@ -28,15 +30,17 @@ const formattedTitle = title.split('|')[0].trim();
     </p>
     <p>{minutesRead}</p>
   </div>
-  <Image
-    src={image.src}
-    alt={image.alt}
-    width={800}
-    height={450}
-    fit='cover'
-    quality={80}
-    format='avif'
-    loading='eager'
-    class='rounded mx-auto shadow-lg mb-8 md:mb-16'
-  />
+  <div class='px-2 lg:px-0'>
+    <Image
+      src={image.src}
+      alt={image.alt}
+      width={800}
+      height={450}
+      fit='cover'
+      quality={80}
+      format='avif'
+      loading='eager'
+      class='rounded mx-auto shadow-lg mb-8 md:mb-16'
+    />
+  </div>
 </header>
