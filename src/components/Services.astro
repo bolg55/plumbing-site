@@ -42,7 +42,7 @@ const { ACCENT, H1, HEADLINE, P1, P2, H2, P3, highlights, image } = Astro.props;
     >
       <div class='lg:pr-4'>
         <div class='lg:max-w-lg'>
-          <p class='text-base font-semibold leading-7 text-sky-800'>
+          <p class='text-base font-semibold uppercase leading-7 text-sky-800'>
             {ACCENT}
           </p>
           <h1
@@ -116,6 +116,15 @@ const { ACCENT, H1, HEADLINE, P1, P2, H2, P3, highlights, image } = Astro.props;
           <p class='mt-6'>
             {P3}
           </p>
+          <div class='mt-8'>
+            <a
+              href='/contact'
+              class='border-2 border-transparent bg-sky-800 text-almost-white hover:border-sky-800 hover:text-sky-800 hover:bg-almost-white rounded px-4 py-2 font-semibold transition-all duration-150 ease-in-out'
+              rel='prefetch'
+            >
+              Contact us
+            </a>
+          </div>
         </div>
       </div>
     </div>
