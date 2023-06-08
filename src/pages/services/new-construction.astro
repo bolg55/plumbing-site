@@ -1,0 +1,52 @@
+---
+import Services from '../../components/Services.astro';
+import Layout from '../../layouts/Layout.astro';
+
+const highlights = [
+  {
+    title: 'Up-to-date practices',
+    description:
+      'Cooper & Adlys stays at the forefront of industry best practices and uses state-of-the-art equipment, ensuring your new construction project benefits from the latest in plumbing technology.',
+  },
+  {
+    title: 'Detailed planning',
+    description:
+      'Our team creates thorough plumbing plans to ensure efficient execution and avoid potential issues, helping keep your project on schedule and within budget.',
+  },
+  {
+    title: 'Quality assurance',
+    description:
+      'Cooper & Adlys guarantees the quality of our work. All installations are thoroughly inspected to ensure they meet our high standards and local building codes.',
+  },
+  {
+    title: 'Excellent communication',
+    description:
+      'At Cooper & Adlys, we keep you informed at every stage of the project, ensuring a transparent and positive collaboration.',
+  },
+];
+
+const image = {
+  src: 'https://res.cloudinary.com/djr4sjcgh/image/upload/v1686249220/new-home-1664284_1280_bxyrd7.jpg',
+  alt: 'A new home being constructed.',
+};
+
+const ACCENT = 'Leading Edge New Construction Plumbing';
+const H1 =
+  'Build with confidence with Cooper & Adlys new construction services';
+const HEADLINE =
+  'Cooper & Adlys is your reliable partner for all new construction plumbing needs in Elmira, Kitchener-Waterloo, and the surrounding communities. We ensure that your new build has a solid plumbing foundation.';
+const P1 =
+  "A solid plumbing system is crucial for any new construction project. At Cooper & Adlys, we bring expert knowledge and superior craftsmanship to new build projects across Waterloo Region and Wellington County. Whether it's a residential development or a commercial build, our team ensures that your new construction has reliable, efficient, and durable plumbing systems in place.";
+const P2 =
+  'Our team collaborates with construction managers, architects, and other contractors to ensure the plumbing installation aligns perfectly with the overall building design. From initial planning and design to final installation and inspection, Cooper & Adlys guarantees a seamless plumbing solution for your new build in Elmira, Kitchener, Waterloo, Cambridge, Guelph, and beyond.';
+const H2 = 'Why Cooper & Adlys for your new construction plumbing needs?';
+const P3 =
+  'As a trusted provider of new construction plumbing services, Cooper & Adlys is dedicated to delivering high-quality work on time and within budget. Our extensive experience, commitment to safety, and understanding of local building codes make us the preferred choice for new construction plumbing in the greater Waterloo Region and Wellington County.';
+---
+
+<Layout
+  title='Leading Edge New Construction Plumbing | Cooper & Adlys'
+  description='Cooper & Adlys is your reliable partner for all new construction plumbing needs in Elmira, Kitchener-Waterloo, and the surrounding communities. We ensure that your new build has a solid plumbing foundation.'
+>
+  <Services {ACCENT} {H1} {HEADLINE} {P1} {P2} {H2} {P3} {highlights} {image} />
+</Layout>

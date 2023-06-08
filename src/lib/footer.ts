@@ -3,16 +3,16 @@ export const footerData = [
     title: 'Services',
     links: [
       {
-        href: '#',
-        label: 'Residential Plumbing',
+        href: '/services/general-plumbing',
+        label: 'General Plumbing',
       },
       {
-        href: '#',
-        label: 'Commercial Plumbing',
+        href: '/services/plumbing-renovations',
+        label: 'Plumbing Renovations',
       },
       {
-        href: '#',
-        label: 'Emergency Plumbing',
+        href: '/services/new-construction',
+        label: 'New Construction',
       },
       {
         href: '#',

@@ -1,0 +1,46 @@
+---
+import Services from '../../components/Services.astro';
+import Layout from '../../layouts/Layout.astro';
+
+const highlights = [
+  {
+    title: 'Expert installation',
+    description:
+      'We offer precise installation of gas lines and appliances, ensuring your systems are set up safely and efficiently.',
+  },
+  {
+    title: 'Reliable repairs',
+    description:
+      'From gas leaks to line damages, Cooper & Adlys provides reliable repairs to keep your gas systems running safely.',
+  },
+  {
+    title: 'Routine maintenance and inspection',
+    description:
+      'We offer routine maintenance and inspection services to ensure your gas systems are running safely and efficiently.',
+  },
+];
+
+const image = {
+  src: 'https://res.cloudinary.com/djr4sjcgh/image/upload/v1686253888/blowtorch-596294_1280_tjaaw0.jpg',
+  alt: 'A blowtorch',
+};
+
+const ACCENT = 'Professional Gas Services';
+const H1 = 'Safe, reliable gas services for your home or business';
+const HEADLINE =
+  'Cooper & Adlys delivers dependable gas line services to Elmira, Kitchener-Waterloo, and the surrounding communities. From installation to repair and maintenance, we ensure the safety and efficiency of your gas systems.';
+const P1 =
+  "Cooper & Adlys is your go-to service provider for all your gas line needs in Waterloo Region and Wellington County. Our experienced and trained professionals handle a wide range of gas services, including gas line installations, repairs, inspections, and maintenance. Whether it's a new gas stove installation or a gas leak repair, we have the expertise to carry out the job safely and effectively.";
+const P2 =
+  "Gas systems need professional attention to ensure their safety and functionality. That's why residents and businesses in Elmira, Kitchener, Waterloo, Cambridge, Guelph, and beyond turn to Cooper & Adlys for our high-quality gas services. We prioritize safety while delivering efficient and prompt solutions to your gas line needs.";
+const H2 = 'Why Cooper & Adlys for your gas line services?';
+const P3 =
+  'Cooper & Adlys is dedicated to providing the highest level of gas services, ensuring the safety and satisfaction of our customers. Our comprehensive gas solutions, attention to detail, and commitment to safety make us a trusted choice for gas services across the greater Waterloo Region and Wellington County.';
+---
+
+<Layout
+  title='Professional Gas Services | Cooper & Adlys'
+  description='Cooper & Adlys delivers dependable gas line services to Elmira, Kitchener-Waterloo, and the surrounding communities. From installation to repair and maintenance, we ensure the safety and efficiency of your gas systems.'
+>
+  <Services {ACCENT} {H1} {HEADLINE} {P1} {P2} {H2} {P3} {highlights} {image} />
+</Layout>

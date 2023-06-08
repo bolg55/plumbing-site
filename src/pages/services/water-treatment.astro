@@ -1,0 +1,51 @@
+---
+import Services from '../../components/Services.astro';
+import Layout from '../../layouts/Layout.astro';
+
+const highlights = [
+  {
+    title: 'Custom solutions',
+    description:
+      'At Cooper & Adlys, we understand that every home or business has unique water treatment needs. We provide tailored solutions to ensure optimal water quality.',
+  },
+  {
+    title: 'Expert installation',
+    description:
+      'Our team of licensed plumbers and technicians are trained to install and service all types of water treatment systems.',
+  },
+  {
+    title: 'Routine maintenance and service',
+    description:
+      'We offer routine maintenance and service plans to keep your water treatment system running smoothly for years to come.',
+  },
+  {
+    title: 'Professional consultation',
+    description:
+      'We offer professional consultation services to help you determine the best water treatment solution for your home or business.',
+  },
+];
+
+const image = {
+  src: 'https://res.cloudinary.com/djr4sjcgh/image/upload/v1686253179/fittings-2784902_1280_halvxc.jpg',
+  alt: 'Water treatment system',
+};
+
+const ACCENT = 'Comprehensive Water Treatment Solutions';
+const H1 = 'Ensure the purity of your water with Cooper & Adlys';
+const HEADLINE =
+  'Cooper & Adlys provides top-tier water treatment services in Elmira, Kitchener-Waterloo, and surrounding areas. We help ensure that your water is safe, clean, and of high quality.';
+const P1 =
+  'Water quality is vital for the health and comfort of your home or business. Cooper & Adlys is dedicated to providing superior water treatment solutions to communities across the Waterloo Region and Wellington County. From water softening and filtration systems to UV sterilization, we have the knowledge and experience to handle all aspects of water treatment.';
+const P2 =
+  "Our skilled team will assess your water quality needs, design a treatment plan tailored to those needs, and implement it with precision. Whether you're dealing with hard water, impurities, or unusual odors, Cooper & Adlys is committed to providing you with clean, pure water in Elmira, Kitchener, Waterloo, Cambridge, Guelph, and beyond.";
+const H2 = 'Why Cooper & Adlys for your water treatment needs?';
+const P3 =
+  'As a trusted water treatment service provider, Cooper & Adlys focuses on delivering solutions that ensure the safety and purity of your water. Our extensive experience, use of top-quality equipment, and customer-centric approach make us the preferred choice for water treatment services in the greater Waterloo Region and Wellington County.';
+---
+
+<Layout
+  title='Comprehensive Water Treatment Solutions | Cooper & Adlys'
+  description='Cooper & Adlys provides top-tier water treatment services in Elmira, Kitchener-Waterloo, and surrounding areas. We help ensure that your water is safe, clean, and of high quality.'
+>
+  <Services {ACCENT} {H1} {HEADLINE} {P1} {P2} {H2} {P3} {highlights} {image} />
+</Layout>
