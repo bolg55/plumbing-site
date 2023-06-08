@@ -62,11 +62,11 @@ export const footerData = [
     title: 'Legal',
     links: [
       {
-        href: '#',
+        href: '/legal/privacy',
         label: 'Privacy Policy',
       },
       {
-        href: '#',
+        href: '/legal/terms',
         label: 'Terms of Service',
       },
     ],

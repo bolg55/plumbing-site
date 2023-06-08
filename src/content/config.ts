@@ -17,6 +17,19 @@ const blogCollection = defineCollection({
   }),
 });
 
+const legalCollection = defineCollection({
+  schema: z.object({
+    title: z.string(),
+    description: z
+      .string()
+      .max(155, 'For optimum SEO, the description should be 155 ch or less.'),
+    }),
+
+});
+
+
+
 export const collections = {
   blog: blogCollection,
+  legal: legalCollection,
 };
