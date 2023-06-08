@@ -28,11 +28,11 @@ export const footerData = [
         label: 'Blog',
       },
       {
-        href: '#',
+        href: '/blog/essential-plumbing-tips',
         label: 'Plumbing Tips',
       },
       {
-        href: '#',
+        href: '/blog/home-plumbing-maintenance-checklist',
         label: 'Maintenance Checklist',
       },
       {
