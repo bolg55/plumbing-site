@@ -1,4 +1,5 @@
 ---
+import { Image } from '@astrojs/image/components';
 import SectionTitle from './SectionTitle.astro';
 ---
 
@@ -43,7 +44,13 @@ import SectionTitle from './SectionTitle.astro';
           <div
             class='aspect-h-2 aspect-w-5 overflow-hidden rounded-lg bg-gray-100'
           >
-            <img
+            <Image
+              format='webp'
+              width={1000}
+              height={400}
+              aspectRatio={5 / 2}
+              quality={80}
+              loading='lazy'
               src='https://res.cloudinary.com/djr4sjcgh/image/upload/v1686238949/bathroom-2718919_1280_yeniyr.jpg'
               alt='A newly renovated bathroom with a large shower stall with a glass door and gray tiles.'
               class='object-cover object-center'
@@ -73,7 +80,13 @@ import SectionTitle from './SectionTitle.astro';
           <div
             class='aspect-h-2 aspect-w-5 overflow-hidden rounded-lg bg-gray-100'
           >
-            <img
+            <Image
+              format='webp'
+              width={1000}
+              height={400}
+              aspectRatio={5 / 2}
+              quality={80}
+              loading='lazy'
               src='https://res.cloudinary.com/djr4sjcgh/image/upload/v1686255549/tubes-2672187_1280_qpqc7f.jpg'
               alt='A large industrial plumbing system with many pipes and valves.'
               class='object-cover object-center'
