@@ -6,11 +6,16 @@ import type { ReactElement } from 'react';
 const FAQ = (): ReactElement => {
   return (
     <div>
-      <div className='mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:px-8'>
+      <div className='mx-auto max-w-7xl px-6 py-24 sm:py-16 sm:pb-32 lg:px-8'>
         <div className='mx-auto max-w-4xl divide-y divide-gray-900/10'>
-          <h2 className='mt-2 text-3xl font-bold tracking-tight text-medium-gray sm:text-4xl text-center'>
-            Frequently asked questions
-          </h2>
+          <div className='mx-auto max-w-4xl lg:text-center'>
+            <h2 className='text-base font-semibold leading-7 text-sky-800 uppercase'>
+              Your Questions, Our Answers
+            </h2>
+            <p className='mt-2 text-3xl font-bold tracking-tight text-medium-gray sm:text-4xl'>
+              Frequently asked questions
+            </p>
+          </div>
           <dl className='mt-10 space-y-6 divide-y divide-gray-900/10'>
             {faqs.map((faq) => (
               <Disclosure as='div' key={faq.question} className='pt-6'>

@@ -2,7 +2,7 @@ export const faqs = [
   {
     question: 'What areas do you serve?',
     answer:
-      "We serve Woolwich, Waterloo Region, and surrounding areas. If you're not sure if we serve your area, please contact us.",
+      "We serve Woolwich, Waterloo Region, Wellington County, and surrounding areas. If you're not sure if we serve your area, please contact us.",
   },
   {
     question: 'What kind of plumbing services do you offer?',
