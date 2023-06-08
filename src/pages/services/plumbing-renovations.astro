@@ -1,0 +1,51 @@
+---
+import Services from '../../components/Services.astro';
+import Layout from '../../layouts/Layout.astro';
+
+const highlights = [
+  {
+    title: 'Tailored solutions by Cooper & Adlys',
+    description:
+      'We provide custom plumbing solutions that perfectly match your renovation design and requirements.',
+  },
+  {
+    title: 'Team of experts',
+    description:
+      'The Cooper & Adlys team of experienced plumbers ensures your renovation project is executed with precision and high-quality workmanship.',
+  },
+  {
+    title: 'End-to-end service',
+    description:
+      'From the initial consultation to the final installation, Cooper & Adlys is here to help you every step of the way.',
+  },
+  {
+    title: 'Efficient and clean',
+    description:
+      'We work quickly and efficiently to minimize disruption to your home or business, and we always leave the job site clean and tidy.',
+  },
+];
+
+const image = {
+  src: 'https://res.cloudinary.com/djr4sjcgh/image/upload/v1686238949/bathroom-2718919_1280_yeniyr.jpg',
+  alt: 'A newly renovated bathroom with a modern sink and shower.',
+};
+
+const ACCENT = 'Transformative Plumbing Renovations';
+const H1 = 'Revitalize your space with Cooper & Adlys plumbing renovations';
+const HEADLINE =
+  'Cooper & Adlys combines modern plumbing technology with your renovation goals to create a space that is both functional and visually stunning, serving Elmira, Kitchener-Waterloo, and the surrounding communities.';
+const P1 =
+  'Undertaking a renovation project is an exciting endeavor. The experienced team at Cooper & Adlys is here to ensure your plumbing needs align seamlessly with your renovation goals. From updated fixtures in your bathroom to a new sink in your kitchen, we offer comprehensive plumbing renovation services across Waterloo Region and Wellington County.';
+const P2 =
+  'At Cooper & Adlys, we work closely with you or your contractor to ensure every plumbing aspect of your renovation project is meticulously planned and executed. Our commitment to quality and attention to detail means you get a finished project that not only looks great but functions flawlessly, from Elmira to Guelph and beyond.';
+const H2 = 'Why choose Cooper & Adlys for your plumbing renovation services?';
+const P3 =
+  'With our deep understanding of both aesthetic appeal and plumbing functionality, Cooper & Adlys is uniquely equipped to bring your renovation dreams to life. We adhere to all local building codes and regulations, ensuring your renovated space is safe, durable, and long-lasting in Kitchener, Waterloo, Cambridge, and beyond.';
+---
+
+<Layout
+  title='Expert Plumbing Solutions'
+  description='Providing quality, reliable and comprehensive general plumbing services throughout Waterloo Region and Wellington County.'
+>
+  <Services {ACCENT} {H1} {HEADLINE} {P1} {P2} {H2} {P3} {highlights} {image} />
+</Layout>
