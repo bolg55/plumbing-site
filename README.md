@@ -31,7 +31,7 @@ This README provides a brief overview of the project.
 |[React](https://react.dev/)| Used where site requires client-side functionality, such as mobile menu, dynamic gallery etc.|
 
 ## License
-This project is open source under the MIT license. See the LICENSE file for more details.
+This project is open source under the MIT license. See the [LICENSE](LICENSE) file for more details.
 
 ## Mockups
 ![Cooper   Adlys Plumbing Mocs](https://github.com/bolg55/plumbing-site/assets/43022248/0006f46c-63b2-4f80-a333-527016326140)
