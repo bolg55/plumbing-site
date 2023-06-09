@@ -49,13 +49,7 @@ const jsonLDGenerator = ({
   return `<script type="application/ld+json">
     {
         "@context": "https://schema.org",
-        "@type": "WebSite",
-        "name": "${siteData.title}",
-        "url": "${import.meta.env.SITE}"
-    },
-    {
-        "@context": "https://schema.org",
-        "@type": "Plumber",
+        "@type": "Plumber" ,
         "name": "Cooper & Adlys Plumbing & Heating Ltd.",
         "url": "${import.meta.env.SITE}",
         "address": {
