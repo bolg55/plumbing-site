@@ -53,6 +53,42 @@ const jsonLDGenerator = ({
         "name": "${siteData.title}",
         "url": "${import.meta.env.SITE}"
     },
+    {
+        "@context": "https://schema.org",
+        "@type": "Plumber",
+        "name": "Cooper & Adlys Plumbing & Heating Ltd.",
+        "url": "${import.meta.env.SITE}",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "25 Grosbeak Road",
+            "addressLocality": "Elmira",
+            "addressRegion": "ON",
+            "postalCode": "N3B 1V8",
+            "addressCountry": "CA"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "43.5896",
+            "longitude": "-80.5747"
+        },
+        "openingHoursSpecification": {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+                "Monday",
+                "Tuesday",
+                "Wednesday",
+                "Thursday",
+                "Friday"
+            ],
+            "opens": "08:00",
+            "closes": "17:00"
+        },
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+1-226-220-2782",
+            "contactType": "Customer service"
+        }
+    }
     </script>`;
 };
 
