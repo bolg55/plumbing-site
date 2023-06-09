@@ -5,6 +5,11 @@ Welcome to the public repository of Cooper & Adlys's official website. The site 
 
 The project uses Astro, a front-end framework that allows us to deliver highly performant, modern web applications.
 
+This project also has a perfect lighthouse score.
+
+![image](https://github.com/bolg55/plumbing-site/assets/43022248/1aa8db4d-ee5b-404e-85ef-01682a2fa3f0)
+
+
 This README provides a brief overview of the project.
 
 ## Table of contents
