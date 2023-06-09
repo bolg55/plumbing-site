@@ -15,8 +15,12 @@ export const footerData = [
         label: 'New Construction',
       },
       {
-        href: '#',
-        label: 'See All Services',
+        href: '/services/water-treatment',
+        label: 'Water Treatment',
+      },
+      {
+        href: '/services/gas-services',
+        label: 'Gas Services',
       },
     ],
   },
