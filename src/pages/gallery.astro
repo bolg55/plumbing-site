@@ -1,6 +1,20 @@
 ---
-import { galleryImages } from '../lib/galleryImages'
-import ImgGallery from '../components/ImgGallery'
+import { galleryImages } from '../lib/galleryImages';
+import ImgGallery from '../components/ImgGallery';
+import Layout from '../layouts/Layout.astro';
+import SectionTitle from '../components/SectionTitle.astro';
 ---
 
-<ImgGallery galleryImages={galleryImages} />
+<Layout
+  title='Plumbing & Heating Project Image Gallery | Cooper & Adlys'
+  description='Explore the Cooper & Adlys image gallery to see our high-quality plumbing and heating work across Elmira, Kitchener, Waterloo, Cambridge, Guelph, and beyond. Witness our commitment to excellence through every project.'
+>
+  <div class='mt-16'>
+    <SectionTitle
+      accent='Quality Workmanship in Pictures'
+      title='Visual showcase of our work'
+    />
+  </div>
+
+  <ImgGallery galleryImages={galleryImages} client:only='react' />
+</Layout>
