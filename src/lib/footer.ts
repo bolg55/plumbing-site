@@ -36,7 +36,7 @@ export const footerData = [
         label: 'Maintenance Checklist',
       },
       {
-        href: '#',
+        href: '/gallery',
         label: 'Gallery',
       },
     ],
