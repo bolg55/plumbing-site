@@ -1,6 +1,7 @@
 ---
 const COMPANY = 'Cooper & Adlys Plumbing & Heating Ltd.';
 import FooterIcons from '../components/FooterIcons.astro';
+import Logo from '../components/Logo.astro';
 import { footerData } from '../lib/footer';
 ---
 
@@ -8,9 +9,7 @@ import { footerData } from '../lib/footer';
   <h2 id='footer-heading' class='sr-only'>Footer</h2>
   <div class='mx-auto max-w-7xl px-6 pb-8 pt-16 sm:pt-24 lg:px-8 lg:pt-32'>
     <div class='xl:grid xl:grid-cols-3 xl:gap-8'>
-      <h3 class='text-2xl font-semibold text-medium-gray'>
-        <a href='/' class='uppercase'> {COMPANY}</a>
-      </h3>
+      <a href='/'> <Logo /></a>
       <div
         class='mt-16 md:grid md:grid-cols-2 lg:grid-cols-4 md:gap-8 xl:col-span-2 xl:mt-0'
       >
