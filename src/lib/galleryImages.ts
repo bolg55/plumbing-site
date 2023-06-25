@@ -1,42 +1,22 @@
 export const galleryImages = [
   {
-    img: 'https://res.cloudinary.com/djr4sjcgh/image/upload/v1686255549/tubes-2672187_1280_qpqc7f.jpg',
-    alt: 'Commercial plumbing tubes',
+    img: 'https://res.cloudinary.com/djr4sjcgh/image/upload/v1687650867/IMG_0561_t6zngj.jpg',
+    alt: 'A Water Softener',
   },
   {
-    img: 'https://res.cloudinary.com/djr4sjcgh/image/upload/v1686253888/blowtorch-596294_1280_tjaaw0.jpg',
-    alt: 'Plumbing blowtorch',
+    img: 'https://res.cloudinary.com/djr4sjcgh/image/upload/v1687650866/IMG_0273_rmaqow.jpg',
+    alt: 'A mechanical room',
   },
   {
-    img: 'https://res.cloudinary.com/djr4sjcgh/image/upload/v1686253179/fittings-2784902_1280_halvxc.jpg',
-    alt: 'Plumbing fittings',
+    img: 'https://res.cloudinary.com/djr4sjcgh/image/upload/v1687650866/IMG_0265_cktcvk.jpg',
+    alt: 'RO system',
   },
   {
-    img: 'https://res.cloudinary.com/djr4sjcgh/image/upload/v1686249220/new-home-1664284_1280_bxyrd7.jpg',
-    alt: 'New home plumbing',
+    img: 'https://res.cloudinary.com/djr4sjcgh/image/upload/v1687650866/IMG_0509_cqa3v0.jpg',
+    alt: 'Water Softener and RO system',
   },
   {
-    img: 'https://res.cloudinary.com/djr4sjcgh/image/upload/v1686238949/bathroom-2718919_1280_yeniyr.jpg',
-    alt: 'Bathroom plumbing',
-  },
-  {
-    img: 'https://res.cloudinary.com/djr4sjcgh/image/upload/v1686233992/sink-96082_1280_rh31za.jpg',
-    alt: 'Sink plumbing',
-  },
-  {
-    img: 'https://res.cloudinary.com/djr4sjcgh/image/upload/v1686232551/bathtub-2174699_1280_iihpbm.jpg',
-    alt: 'Bathtub plumbing',
-  },
-  {
-    img: 'https://res.cloudinary.com/djr4sjcgh/image/upload/v1686174647/plumbing-585658_1280_tgv9g6.jpg',
-    alt: 'Plumbing',
-  },
-  {
-    img: 'https://res.cloudinary.com/djr4sjcgh/image/upload/v1686173816/plumber-228010_1280_d4wkqu.jpg',
-    alt: 'Plumber',
-  },
-  {
-    img: 'https://res.cloudinary.com/djr4sjcgh/image/upload/v1686169445/bathroom-1228427_1280_b9rimi.jpg',
-    alt: 'Bathroom',
+    img: 'https://res.cloudinary.com/djr4sjcgh/image/upload/v1687652483/IMG_5987_1_rwizh4.jpg',
+    alt: 'A mechanical room with water heater',
   },
 ];

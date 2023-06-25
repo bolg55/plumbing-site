@@ -11,12 +11,12 @@ const GalleryGrid = ({ galleryImages, openModal }: GalleryGridProps) => {
     <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2 mb-32 mt-16 max-w-7xl mx-auto px-2'>
       {galleryImages.map(({ img, alt }, index) => (
         <div
-          className='w-full bg-cover overflow-hidden'
+          className='aspect-h-4 aspect-w-4 overflow-hidden'
           key={index}
           onClick={() => openModal(index)}
         >
           <img
-            className='rounded shadow hover:scale-110 transform transition duration-500 ease-in-out cursor-pointer min-h-full'
+            className='rounded shadow hover:scale-110 transform transition duration-500 ease-in-out cursor-pointer object-cover object-center'
             src={img}
             alt={alt}
           />

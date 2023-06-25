@@ -8,14 +8,14 @@ const Header = (): ReactElement => {
 
   return (
     <header className='container'>
-      <div className='flex py-5 px-3'>
-        <div className='flex items-center'>
-          <h3 className='text-2xl font-semibold text-medium-gray'>
-            <a href='/' rel='prefetch'>
-              COOPER & ADLYS
-            </a>
-          </h3>
-        </div>
+      <div className='flex py-4'>
+        <a href='/'>
+          <img
+            src='https://res.cloudinary.com/djr4sjcgh/image/upload/v1687650102/COOPER_ADLY_LTD_LOGO-ai_ug9pmx.png'
+            alt='Cooper & Adlys Logo'
+            className='h-auto w-52'
+          />
+        </a>
         <div className='flex-grow flex items-center z-20'>
           <NavMenu />
         </div>

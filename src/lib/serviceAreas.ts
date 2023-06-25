@@ -37,6 +37,14 @@ export const serviceAreas = [
   },
   {
     id: 10,
+    name: 'Listowel',
+  },
+  {
+    id: 11,
+    name: 'Drayton',
+  },
+  {
+    id: 12,
     name: 'And surrounding communities',
   },
 ];
