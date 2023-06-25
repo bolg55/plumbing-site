@@ -3,4 +3,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://earnest-sawine-9bfa22.netlify.app/sitemap-index.xml
+Sitemap: https://cooperadlys.ca/sitemap-index.xml

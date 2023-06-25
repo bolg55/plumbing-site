@@ -19,5 +19,5 @@ export default defineConfig({
   markdown: {
     remarkPlugins: [remarkReadingTime],
   },
-  site: 'https://earnest-sawine-9bfa22.netlify.app/',
+  site: 'https://cooperadlys.ca',
 });
