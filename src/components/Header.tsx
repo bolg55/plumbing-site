@@ -8,7 +8,7 @@ const Header = (): ReactElement => {
 
   return (
     <header className='container'>
-      <div className='flex py-4'>
+      <div className='flex px-4 lg:px-0 py-4'>
         <a href='/'>
           <img
             src='https://res.cloudinary.com/djr4sjcgh/image/upload/v1687650102/COOPER_ADLY_LTD_LOGO-ai_ug9pmx.png'
