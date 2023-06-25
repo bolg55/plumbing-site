@@ -36,12 +36,8 @@ export const galleryImages = [
     alt: 'A mechanical room with water heater',
   },
   {
-    img: 'https://res.cloudinary.com/djr4sjcgh/image/upload/v1687656843/IMG_5988_1_kirq3i.jpg',
-    alt: 'A mechanical room with water heater close up',
-  },
-  {
     img: 'https://res.cloudinary.com/djr4sjcgh/image/upload/v1687656934/IMG_0907_xxbo67.jpg',
-    alt: 'A bank of pipes',
+    alt: 'A primer manifold',
   },
   {
     img: 'https://res.cloudinary.com/djr4sjcgh/image/upload/v1687658040/IMG_6442_1_knpzfd.jpg',

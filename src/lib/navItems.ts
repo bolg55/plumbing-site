@@ -12,7 +12,7 @@ export const navItems = [
     href: '/contact',
   },
   {
-    name: 'Blog',
-    href: '/blog',
+    name: 'Gallery',
+    href: '/gallery',
   },
 ];
