@@ -40,8 +40,7 @@ const jsonLDGenerator = ({
                 "name": "${author}"
             },
 
-            }
-            "datePublished": "${publishedDate}",
+            "datePublished": "${publishedDate}"
 
         }
         </script>`;
