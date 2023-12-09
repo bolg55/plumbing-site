@@ -15,6 +15,13 @@ import SectionTitle from '../components/SectionTitle.astro';
       title='Visual showcase of our work'
     />
   </div>
+  <div class='flex mt-4 justify-center align-middle'>
+    <a
+      href='/testimonials'
+      class='hover:text-sky-800 transition-all underline underline-offset-2 cursor-pointer'
+      >See what our customers have to say</a
+    >
+  </div>
 
   <ImgGallery galleryImages={galleryImages} client:only='react' />
 </Layout>
