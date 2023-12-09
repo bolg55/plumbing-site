@@ -2,9 +2,9 @@ import { StarIcon } from '@heroicons/react/20/solid';
 
 const reviews = {
   average: 5,
-  totalCount: 3,
+  totalCount: 6,
   counts: [
-    { rating: 5, count: 3 },
+    { rating: 5, count: 6 },
     { rating: 4, count: 0 },
     { rating: 3, count: 0 },
     { rating: 2, count: 0 },
@@ -19,16 +19,43 @@ const reviews = {
         `,
       author: 'Robyn Beckett',
     },
+    ,
     {
       id: 2,
+      rating: 5,
+      content: `
+      Excellent company to do business with! Adam is professional, explained everything in detail and gave us options. Highly recommend!
+          `,
+      author: 'Damien Parent',
+    },
+
+    {
+      id: 3,
+      rating: 5,
+      content: `
+      Adam was always quick to respond. He was professional and courteous and was able to come up with a solution to fix our problem. Highly recommend him.
+          `,
+      author: 'Jenny Gould',
+    },
+    {
+      id: 4,
+      rating: 5,
+      content: `
+      Adam was able to fit us in on short notice and fix a blocked pipe. Very professional and explained exactly what the problem was
+          `,
+      author: 'Matt Horst',
+    },
+    {
+      id: 5,
       rating: 5,
       content: `
       I was dealing with a major flood in my basement. One phone call and Adam was there to help solve my issue. At 9pm, on a Sunday, in the middle of winter. Amazing service!
           `,
       author: 'Kellen Bolger',
     },
+
     {
-      id: 3,
+      id: 6,
       rating: 5,
       content: `
         Excellent service and excellent results. He got to the bottom of the problem.
@@ -145,18 +172,18 @@ const Review = () => {
           <div className='flow-root'>
             <div className='-my-12 divide-y divide-gray-200'>
               {reviews.featured.map((review) => (
-                <div key={review.id} className='py-12'>
+                <div key={review?.id} className='py-12'>
                   <div className='flex items-center'>
                     <div>
                       <h4 className='text-sm font-bold text-gray-900'>
-                        {review.author}
+                        {review?.author}
                       </h4>
                       <div className='mt-1 flex items-center'>
                         {[0, 1, 2, 3, 4].map((rating) => (
                           <StarIcon
                             key={rating}
                             className={classNames(
-                              review.rating > rating
+                              review!.rating > rating
                                 ? 'text-yellow-400'
                                 : 'text-gray-300',
                               'h-5 w-5 flex-shrink-0'
@@ -165,12 +192,12 @@ const Review = () => {
                           />
                         ))}
                       </div>
-                      <p className='sr-only'>{review.rating} out of 5 stars</p>
+                      <p className='sr-only'>{review?.rating} out of 5 stars</p>
                     </div>
                   </div>
 
                   <p className='mt-4 space-y-6 text-base italic text-gray-600'>
-                    {review.content}
+                    {review?.content}
                   </p>
                 </div>
               ))}
